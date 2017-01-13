@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="pandoc" />
+  <title>Visualização de Dados</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="courses.css" type="text/css" />
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Visualização de Dados</a>
+    </div>
+    <div id="navbarCollapse" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-left">
+      <!-- <li id="nav-index" > -->
+      <!-- 	<a href="index.html"></a> -->
+      <!-- </li> -->
+      <li id="nav-syllabus" >
+	<a href="syllabus.html">Ementa</a>
+      </li>
+      <li id="nav-schedule" >
+	<a href="schedule.html">Cronograma</a>
+      </li>
+      <li id="nav-assignments" class="dropdown">
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	  Listas de Exercício
+	  <span class="caret"></span>
+	</a>
+	<ul class="dropdown-menu">
+	  <li id="nav-assignment1">
+	    <!-- <a href="assignment1.html">Lista 1</a> -->
+	    <a href="assignments.html">Instruções de Entrega</a>
+	  </li>
+	  <li id="nav-assignment1">
+	    <!-- <a href="assignment1.html">Lista 1</a> -->
+	    <a href="http://github.com/visualizacao-ufpe/data_vis_2016_2_listas">Listas</a>
+	  </li>
+	</ul>
+      </li>
+      <li id="nav-project" >
+	<!-- <a href="project.html">Projeto</a> -->
+	<a href="project.html">Projeto</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <!-- <li> -->
+      <!-- 	<a href="http://www.cis.umassd.edu/~dkoop/">Prof. David Koop</a> -->
+      <!-- </li> -->
+      <li>
+	<a style="padding-top: 6px; padding-bottom: 6px;" href="http://www.cin.ufpe.br/">
+	  <img style="opacity: 0.6; filter: alpha(opacity=60); vertical-align: center;" height="35px" src="figs/cin.jpg" onerror="this.src='figs/cin.jpg'"></a>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+            <div id="header">
+	      <h1 class="title">Cronograma</h1>
+	    </div>
+            <p>Observação: Este cronograma está sujeito a mudanças.</p>
+<div id="calendar" class="section level3">
+<h3>Calendário</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Data</th>
+<th align="left">Tópico</th>
+<th align="left">Leitura</th>
+<th align="left">Material Complementar</th>
+</tr>
+</thead>
+<tbody>
+<!------------------------------------------------------------------------------------------->
+ <tr class="odd">
+<td align="left">09/08/16</td>
+<td align="left">&nbsp;<a href="#lec01">Introdução ao Curso</a></td>
+<td align="left">VAD Capítulo 1, Vídeos: <a href="https://www.youtube.com/watch?v=KGJgzqgd10c" target="_blank"><a href="https://www.youtube.com/watch?v=t73yuUV2xXI" target="_blank">Fernanda Viegas (Google)</a>, <a href="http://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization?language=en" target="_blank">The beauty of data visualization</a>
+    <!-- Curso UFMG</a>, <a href="https://www.youtube.com/watch?v=t73yuUV2xXI" target="_blank">Fernanda Viegas (Google)</a>, <a href="https://www.youtube.com/watch?v=qXya-b5V0uE" target="_blank">Jeff Heer (U. of Wash.)</a>, <a href="https://vimeo.com/84520385" target="_blank">Miriah Meyer (U. of Utah)</a> -->
+</td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">11/08/16</td>
+<td align="left">&nbsp;Programação para Web Básica</td>
+<td align="left">IDV Capítulo 3</td>
+<td align="left"><a href="https://git-scm.com/book/en/v2" target="_blank">Git Book</a>, <a href="https://cscheid.net/courses/spr15/cs444/lectures/week2.html" target="_blank">HTML,CSS,SVG</a></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">16/08/16</td>
+<td align="left">&nbsp;<a href="#lec02">JavsaScript</a></td>
+<td align="left">IDV Capítulo 3</td>
+<td align="left"><a href="https://cscheid.net/courses/spr15/cs444/lectures/week3.html" target="_blank">HTML,CSS,SVG</a></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">18/08/16</td>
+<td align="left">&nbsp;Introdução à biblioteca D3</td>
+<td align="left">IDV Capítulos 5 e 6</td>
+<td align="left"><a href="www.cin.ufpe.br/~nivan/teaching/data_vis/fall_2016/material/lecture4.pptx">Slides</a></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">23/08/16</td>
+<td align="left">&nbsp;Canais Visuais e Regras de Design</td>
+<td align="left">VAD Capítulos 5 e 6</td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">25/08/16</td>
+<td align="left">&nbsp;D3 Escalas e Eixos</td>
+<td align="left">IDV Capítulos 7 e 8</td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">30/08/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">01/09/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">06/09/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">08/09/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">13/09/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">15/09/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">20/09/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">22/09/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">27/09/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">29/09/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">04/10/16</td>
+<td align="left"><strong>Não haverá aula. (A confirmar)</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">06/10/16</td>
+<td align="left"><strong>Não haverá aula. (A confirmar)</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">11/10/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">13/10/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">18/10/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">20/10/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">25/10/16</td>
+<td align="left"><strong>Não haverá aula. (A confirmar)</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">27/10/16</td>
+<td align="left"><strong>Não haverá aula. (A confirmar)</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">01/11/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">03/11/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">08/11/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">10/11/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">15/11/16</td>
+<td align="left"><strong>Feriado Proclamação da República</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">17/11/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">24/11/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">29/11/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">01/12/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="even">
+<td align="left">06/12/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<!------------------------------------------------------------------------------------------->
+<tr class="odd">
+<td align="left">08/12/16</td>
+<td align="left">&nbsp;A definir</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- <div id="lectures" class="section level3"> -->
+<!-- <h3>Lectures</h3> -->
+<!-- <ol style="list-style-type: decimal"> -->
+<!-- <li><a name="lec01"></a> (1/25) Introdução -->
+<!-- <ul> -->
+<!-- <li>Leitura: Cápitulo 1 (Tamara)</li> -->
+<!-- <li><a href="lectures/lecture01.pdf">Slides</a></li> -->
+<!-- </ul></li> -->
+
+<!-- <li><a name="lec02"></a> (1/27) HTML &amp; CSS -->
+<!-- <ul> -->
+<!-- <li>Reading: <a href="http://chimera.labs.oreilly.com/books/1230000000345/ch03.html">Ch. 3</a> of <a href="http://chimera.labs.oreilly.com/books/1230000000345">Interactive Data Visualization for the Web</a>, S. Murray.</li> -->
+<!-- <li><a href="lectures/lecture02.pdf">Slides</a></li> -->
+<!-- <li><a href="https://developer.mozilla.org/en-US/docs/Web">Mozilla Development Network (MDN) docs</a>: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec03"></a> (2/1) SVG &amp; JavaScript -->
+<!-- <ul> -->
+<!-- <li><a href="lectures/lecture03.pdf">Slides</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec04"></a> (2/3) Data -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch. 2</li> -->
+<!-- <li><a href="lectures/lecture04.pdf">Slides</a></li> -->
+<!-- <li>Examples: <a href="http://codepen.io/dakoop/pen/yexVXb">SVG</a>, <a href="http://codepen.io/dakoop/pen/MKqbjm">DOM Manipulation</a>, <a href="http://codepen.io/dakoop/pen/RrYoYw">Visualization</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec05"></a> (2/10) Tasks &amp; Design -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch. 3 &amp; 4</li> -->
+<!-- <li><a href="lectures/lecture05.pdf">Slides</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec06"></a> (2/16) Marks &amp; Channels -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch. 5</li> -->
+<!-- <li><a href="lectures/lecture06.pdf">Slides</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec07"></a> (2/18) D3 -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch. 5 &amp; 6 of <a href="http://chimera.labs.oreilly.com/books/1230000000345">Interactive Data Visualization for the Web</a>, S. Murray.</li> -->
+<!-- <li><a href="lectures/lecture07.pdf">Slides</a></li> -->
+<!-- <li><a href="http://vadim.ogievetsky.com/IntroD3/">Ogievetsky's D3 Introduction</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec08"></a> (2/22) Tabular Data -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch.7</li> -->
+<!-- <li><a href="lectures/lecture08.pdf">Slides</a></li> -->
+<!-- <li><a href="http://vadim.ogievetsky.com/IntroD3/">Ogievetsky's D3 Introduction</a></li> -->
+<!-- <li>Example: <a href="http://codepen.io/dakoop/pen/eJwbaW">Line Chart</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec09"></a> (2/24) Networks -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch. 9</li> -->
+<!-- <li><a href="lectures/lecture09.pdf">Slides</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec10"></a> (3/2) Trees &amp; Geospatial Data -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch. 8.1-8.3</li> -->
+<!-- <li><a href="lectures/lecture10.pdf">Slides</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec11"></a> (3/7) Geospatial Data &amp; Color -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch. 10</li> -->
+<!-- <li><a href="lectures/lecture11.pdf">Slides</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec12"></a> (3/9) Color &amp; Colormaps -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch. 10</li> -->
+<!-- <li><a href="lectures/lecture12.pdf">Slides</a></li> -->
+<!-- <li>Example: <a href="http://codepen.io/dakoop/pen/PNNyWz">Massachusetts Map</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec13"></a> (3/21) Colormap Examples -->
+<!-- <ul> -->
+<!-- <li><em>No class due to snow day</em></li> -->
+<!-- <li>Examples: <a href="http://codepen.io/dakoop/pen/aNJaPz">Food Map</a>, Census Map: <a href="http://codepen.io/dakoop/pen/EKWdaV">Segmented</a>, <a href="http://codepen.io/dakoop/pen/YqZJGr">Continuous</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec14"></a> (3/23) Interaction -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch. 6 &amp; 11, <a href="http://vcg.seas.harvard.edu/files/pfister/files/2013_infovis_lineup.pdf">LineUp</a></li> -->
+<!-- <li><a href="lectures/lecture14.pdf">Slides</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec15"></a> (3/28) Multiple Views -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch. 12</li> -->
+<!-- <li><a href="lectures/lecture15.pdf">Slides</a></li> -->
+<!-- <li>Example: <a href="http://codepen.io/dakoop/pen/yOXWPZ">Brushing</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec16"></a> (3/30) Aggregation -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch. 13</li> -->
+<!-- <li><a href="lectures/lecture16.pdf">Slides</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec17"></a> (4/4) Focus+Context and Sets -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch. 14, <a href="http://research.microsoft.com/en-us/um/people/nath/docs/kelpfusion_tvcg2013.pdf">Kelp Fusion</a>, <a href="http://vialab.science.uoit.ca/wp-content/papercite-data/pdf/col2009c.pdf">Bubble Sets</a></li> -->
+<!-- <li><a href="lectures/lecture17.pdf">Slides</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec18"></a> (4/11) Data -->
+<!-- <ul> -->
+<!-- <li>Reading: <a href="http://learnjsdata.com">learnjsdata.com</a></li> -->
+<!-- <li><a href="lectures/lecture18.pdf">Slides</a></li> -->
+<!-- <li>Examples: <a href="http://codepen.io/dakoop/pen/PNQgEe">NYC Murders Map (LeafletJS)</a>, <a href="http://codepen.io/dakoop/pen/NNYKbK">Census by State</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec19"></a> (4/13) Text -->
+<!-- <ul> -->
+<!-- <li><a href="lectures/lecture19.pdf">Slides</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec20"></a> (4/20) Isosurfacing -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch. 8.4</li> -->
+<!-- <li><a href="lectures/lecture20.pdf">Slides</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec21"></a> (4/27) Volume Rendering -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch. 8.4</li> -->
+<!-- <li><a href="lectures/lecture21.pdf">Slides</a></li> -->
+<!-- </ul></li> -->
+<!-- <li><a name="lec22"></a> (5/2) Vector Visualization -->
+<!-- <ul> -->
+<!-- <li>Reading: Ch. 8.5-8.6</li> -->
+<!-- <li>Slides</li> -->
+</ul></li>
+</ol>
+</div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+  document.getElementById("nav-schedule").className += "active";
+</script>
+</body>
+</html>

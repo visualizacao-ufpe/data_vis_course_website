@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3 Page Template</title>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    </head>
+    <body>
+      <p>
+      <p>
+      <p>
+      <p>
+      <p>
+        <script type="text/javascript">
+          // Your beautiful D3 code will go here
+	  var dataset = [ 5, 10, 15, 20, 25 ];
+	  d3.select("body").selectAll("p") .data(dataset)
+	  .text(function(d){return "New paragraph! " + d;});
+
+
+        </script>
+    </body>
+</html>
+
+
+int base     = 2;
+int minExp   = -9;
+int maxExp   = 9;
+int precisao = 4;
+
+void example(){
+    int numero = 16;
+    int indice = 0;
+    while(numero > 0){
+        int digito = numero % 2;
+        numero = (numero - digito)/2;
+        printf("digito %d eh %d\n",indice,digito);
+        indice += 1;
+    }
+}
+
+double maquinaParaDecimal(int mantissa[], int expoente){
+    double x = 0.0;
+
+    for(int i = 0 ; i < precisao ; ++i){
+        double parcel =  (mantissa[i] * pow(base,expoente-i));
+        x += parcel;
+    }
+
+    return x;
+}
+
+void increment(int m1[]){
+    int carry = 1;
+    for(int i = (precisao - 1) ; i >= 0 ; i--){
+        int valor = (carry + m1[i])%2;
+
+        if(m1[i] == 1 && carry == 1)
+            carry = 1;
+        else
+            carry = 0;
+
+        m1[i] = valor;
+    }
+}
+
+void printMantissa(int m[]){
+    for(int i = 0 ; i < precisao ; ++i){
+        printf("%d",m[i]);
+    }
+}
+
+int main(){
+
+    for(int e = minExp ; e <= maxExp ; ++e){
+        printf("EXPOENTE %d\n",e);
+        int mantissa[] = {0,0,0,0};
+        int numeroDeMantissas = pow(2,precisao);
+        for(int i = 0 ; i < numeroDeMantissas ; ++i){
+            printMantissa(mantissa);
+            printf("       ");
+            //
+            double numeroDeMaquina = maquinaParaDecimal(mantissa, e);
+            printf("N%d = %f\n",i,numeroDeMaquina);
+            //
+            increment(mantissa);
+        }
+        printf("\n");
+        printf("\n");
+        printf("\n");
+    }
+
+
+    int mantissa[] = {1,0,1,1};
+    double x = maquinaParaDecimal(mantissa,2);
+    printf("resultado %f\n",x);
+
+    return 0;
+}
+

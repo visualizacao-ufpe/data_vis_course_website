@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+      <svg width="500" height="500" id="mysvg"></svg>
+      <script type="text/javascript">
+
+	function createCircleChild(parent,radius,cx,cy){
+	var result = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+	result.setAttribute("r",radius.toString());
+	result.setAttribute("cx",cx.toString());
+	result.setAttribute("cy",cy.toString());
+	parent.appendChild(result);	
+	}
+
+	function createPolylineChild(parent,points,thickness,color){
+	var result = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+	result.setAttribute("fill","none");
+	result.setAttribute("stroke",color);
+	result.setAttribute("stroke-width",thickness.toString());
+	var pointsStr = points.reduce(function(prev,curr,index,array){
+	var point  = array[index];
+	return prev + point[0] + "," + point[1] + " "
+	},"");
+	result.setAttribute("points",pointsStr);
+	parent.appendChild(result);	
+	}
+
+	function createTimeSeriesPlot(parent,timeSeriesData){
+	var group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+	group.setAttribute("transform","translate(0,500) scale(1,-1)");
+	//draw axes
+	createPolylineChild(group,[[10,0],[10,500]],2.0,"black");
+	createPolylineChild(group,[[0,10],[500,10]],2.0,"black");
+	//draw time line
+	createPolylineChild(group,timeSeriesData,5.0,"blue"); 
+	//add dots
+	timeSeriesData.forEach(function(d){createCircleChild(group,5,d[0],d[1]);});
+	parent.appendChild(group);
+	}
+
+	var svg = document.getElementById("mysvg");
+	//createCircleChild(svg,5,100,100);
+	//createPolylineChild(svg,[[10,10],[20,20],[25,10]],5.0,"blue");
+	var mydata = [[100,10],[200,200],
+	              [300,100],[400,150],[500,150]];
+	createTimeSeriesPlot(svg,mydata);
+      </script>
+    </body>
+</html>
