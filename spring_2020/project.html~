@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="pandoc" />
+  <title>Visualização de Dados</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="courses.css" type="text/css" />
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Visualização de Dados</a>
+    </div>
+    <div id="navbarCollapse" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-left">
+      <!-- <li id="nav-index" > -->
+      <!-- 	<a href="index.html"></a> -->
+      <!-- </li> -->
+      <li id="nav-syllabus" >
+	<a href="syllabus.html">Ementa</a>
+      </li>
+      <li id="nav-schedule" >
+	<a href="schedule.html">Cronograma</a>
+      </li>
+      <li id="nav-assignments" class="dropdown">
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	  Listas de Exercício
+	  <span class="caret"></span>
+	</a>
+	<ul class="dropdown-menu">
+	  <li id="nav-assignment1">
+	    <!-- <a href="assignment1.html">Lista 1</a> -->
+	    <a href="assignments.html">Instruções de Entrega</a>
+	  </li>
+	  <li id="nav-assignment1">
+	    <!-- <a href="assignment1.html">Lista 1</a> -->
+	    <a href="https://visualizacao-ufpe.github.io/data_vis_assignments/2017.1/index.html">Listas</a>
+	  </li>
+	</ul>
+      </li>
+      <li id="nav-project" >
+	<!-- <a href="project.html">Projeto</a> -->
+	<a href="project.html">Projeto</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <!-- <li> -->
+      <!-- 	<a href="http://www.cis.umassd.edu/~dkoop/">Prof. David Koop</a> -->
+      <!-- </li> -->
+      <li>
+	<a style="padding-top: 6px; padding-bottom: 6px;" href="http://www.cin.ufpe.br/">
+	  <img style="opacity: 0.6; filter: alpha(opacity=60); vertical-align: center;" height="35px" src="figs/cin.jpg" onerror="this.src='figs/cin.jpg'"></a>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+            <div id="header">
+	<h1 class="title">Projeto</h1>
+			      </div>
+            <div id="course-information" class="section level3">
+	      <h3>Informações Sobre o Projeto</h3>
+	      O objetivo do projeto é praticar os conceitos vistos em sala para produzir um (protótipo) sistema de visualização interativa de dados para análise de uma conjunto de dados real.
+	      O sistema produzido deve ser um sistema Web implementado em D3. 
+	      Para realizar este projeto os alunos deverão se reunir em grupos de até 3 integrantes (alunos da pós-graduação deverão fazer projetos individualmente). Note que o objetivo final
+	      é buscar um melhor entendimento dos dados. A visualização deve ser um instrumento para alcançar esse objetivo. Isso significa, que os projetos serão avaliados não somente na visualização
+	      produzida (considerações de design), mas também em fatos interessantes que foram obtidos a partir das visualizações.
+	    </div>
+
+	    <div id="course-information" class="section level3">
+	      <h3>Informações Sobre a Avaliação</h3>
+	      A avaliação do projeto será baseada em três critérios: qualidade do projeto e resultados alcançados, apresentações do projeto e pontualidade.
+	      Durante a realização do projeto, os grupos deverão apresentar fazer 3 apresentações do seu projeto: Uma apresentação inicial defendendo sua proposta (dataset a ser analisado e ideias inicias sobre a análise que será feita), uma apresentação intermediária para informar a classe sobre o progresso na execução do projeto e uma apresentação final que deverá constar de uma demonstração do sistema implementado e resultados obtidos. Cada uma destas apresentações será parte da avalição.
+	      <!--  -->
+	      A fim de auxiliar a realização dos projetos, cada grupo será acompanhado individualmente em aulas de acompanhamento. As aulas de acompanhamento também serão parte da avaliação. Os integrantes do grupo deverão estar presentes nas aulas de acompanhamento, que constaram de discussões sobre o estado atual e definições de metas para serem alcançadas.
+	      <!--  -->
+	      O dia de cada apresentação será um dia de entrega. Nesses dias os slides de apresentação e código da aplicação devem estar salvos no repositório git do projeto.
+	    </div>
+	    
+	    <div id="instructor-information" class="section level3">
+	      <h3>Calendário</h3>
+	      <ul>
+		<li><strong>Definição das Equipes:</strong> A definir</li>
+		<li><strong>Apresentação das Propostas de Projeto:</strong> A definir</li>
+		<li><strong>Apresentação de Progresso:</strong> A definir</li>
+		<li><strong>Apresentação Final:</strong> A definir</li>
+	      </ul>
+	    </div>
+	    
+	    <div id="course-description" class="section level3">
+	      <h3>Instruções de Entrega e Execução</h3>
+	      <p>Cada grupo deverá criar um repositório <strong>público</strong> no GitHub compartilhar esse repositório com o usuário visualizacao-ufpe. O nome do repositório deverá seguir o formato NOMEDOPROJETO-visualizacao-2017-1.</p>
+	      <p>Todos os materiais produzidos (textos, apresentações, código e etc) devem estar disponíveis no repositório. Os dados devem estar disponíveis para download, a fim de que os resultados obtidos possam ser replicados.
+		O repositório deve conter uma página HTML descrevendo o sistema desenvolvido e instruções de uso (como rodar e utilizar o sistema). Tal página deve ser feita com o <a href="https://pages.github.com/">GithubPages</a>. Além disso, a página deve conter emails para os slides de apresentação e demo do projeto.</p>
+	    </div>
+
+    </div>
+  </div>
+</div>
+	    
+	    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+  document.getElementById("nav-syllabus").className += "active";
+</script>
+</body>
+</html>
